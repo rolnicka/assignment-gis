@@ -9,7 +9,7 @@ This application shows streets and squares or certain item in selected part of S
 Classic view of the best streets (yellow ones, the best of yellows ones are green) for public transportation in Nitra:
 ![Screenshot](nitra_pubtrans.png)
 
-Gradient view of the best streets for night lift in Nitra:
+Gradient view of the best streets for public transportation in Nitra:
 ![Screenshot](nitra_pubtrans_gradient.png)
 
 The application has 2 separate parts, the client which is a [frontend web application](#frontend) using mapbox API and mapbox.js and the [backend application](#backend) written in [Python - cherrypy](http://cherrypy.org/), backed by PostGIS. The frontend application communicates with backend using a [REST API](#api).
