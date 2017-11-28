@@ -1,0 +1,74 @@
+#map {
+    float: right;
+    margin: 0px;
+    display: inline-block;
+    flex-basis: 75vw;
+    height: 100vh;
+}
+
+#menu {
+    margin: 0px;
+    display: inline-block;
+    flex-basis: 25vw;
+    height: 100vh;
+}
+
+body {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+
+}
+
+.button {
+    cursor: pointer;
+    text-align: center;
+    background: #80bffe;
+    width: 60%;
+}
+
+.headline {
+    background: #80bffe;
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+}
+
+.center {
+    text-align: center;
+    margin: 5px;
+}
+
+#loader {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    z-index: 1;
+    width: 150px;
+    height: 150px;
+    margin: -75px 0 0 -75px;
+    border: 16px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 16px solid #3498db;
+    width: 120px;
+    height: 120px;
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+@-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}

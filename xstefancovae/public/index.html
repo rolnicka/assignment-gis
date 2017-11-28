@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <link href='./style.css' rel='stylesheet' />
+    <link href='https://api.mapbox.com/mapbox-gl-js/v0.40.0/mapbox-gl.css' rel='stylesheet' />
+    <meta charset="UTF-8">
+    <title>Find your paradise</title>
+</head>
+
+<body>
+
+    <!-- menu -->
+    <div id="menu">
+
+        <div id="intro" class="headline">
+            <h2 id="title">Find your piece of paradise</h2>
+            <h4 id="subscrioption">Are you moving or looking for perfect holiday location in certain area?
+                Let us help you to find the right streets for your new home.</h4>
+        </div>
+
+        <div id="location" class="center">
+            <p>Locality you are interested in</p>
+            <input id="input_location" type="text" placeholder="Locality where to search">
+        </div>
+
+        <hr>
+
+        <div id="find_in" class="center">
+            <p>In the locality, you are looking for</p>
+            <input id="input_place" type="text" placeholder="What to search for">
+            <!--<div class="button" href="" id="btn_find_in">Search</div>-->
+            <button class="button" id="btn_find_in">Search</button>
+        </div>
+
+        <hr>
+
+        <div id="kids_public_transportation" class="center">
+            <p>Your are looking for streets:</p>
+            <button class="button" id="btn_kids">Children friendly</button>
+            <button class="button" id="btn_public_transport">Near public transportation</button>
+
+            <!--<p>Your life style is:</p>-->
+            <button class="button" id="btn_city_sport">Active sporting</button>
+            <button class="button" id="btn_city_life">Shopping and night life</button>
+            <button class="button" id="btn_city_tourism">Tourism</button>
+
+            <p>Average selected streets = yellow<br/>The best selected streets = green</p>
+            <p><input type="checkbox" id="gradient">Order all from the best (green) to the worst (red)</p>
+
+            <hr>
+
+            <button class="button" id="btn_clear">Clear the map</button>
+        </div>
+    </div>
+
+    <!-- map -->
+    <div id='map'>
+        <div id="loader" style="display:none;"></div>
+    </div>
+
+    <!-- last row body -->
+    <script src='https://api.mapbox.com/mapbox-gl-js/v0.40.0/mapbox-gl.js'></script>
+    <script src='./map.js'></script>
+</body>
+
+</html>
